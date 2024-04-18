@@ -23,7 +23,7 @@ async function recibirEvento() {
             const id = mensaje.content
             try {
                 const id = Number(mensaje.content)
-                const response = await axios.post('http://localhost:3001/mensaje', {
+                const response = await axios.post('https://api2-event-1.onrender.com/mensaje', {
                    id
                 });
                 console.log("Respuesta de API externa:",response.data);
